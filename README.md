@@ -125,7 +125,7 @@ PR6-Journal-Manager.py
 
 
 ## Video Demonstration
-video Link:[]
+video Link:[https://drive.google.com/file/d/1Heez3TyGlb5O8CCqu6xcvuZB3Ijlaf_R/view?usp=sharing]
 
 ## 📸 Sample Workflow
 
