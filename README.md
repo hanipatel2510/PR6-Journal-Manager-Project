@@ -105,7 +105,7 @@ This ensures the program does not crash during execution.
 1. Clone the repository.
 
 ```
-git clone https://github.com/your-username/PR6-Journal-Manager-Project.git
+git clone https://github.com/hanipatel2510/PR6-Journal-Manager-Project.git
 ```
 
 2. Open the project folder.
