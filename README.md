@@ -124,6 +124,7 @@ PR6-Journal-Manager.py
 ![output](Output2.png)
 ![output](Output3.png)
 ![output](Output4.png)
+![output](Output5.png)
 
 
 ## Video Demonstration
