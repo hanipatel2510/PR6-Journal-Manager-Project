@@ -9,8 +9,11 @@ class JournalManager:
         try:
             entry = input("\nEnter your journal entry:\n")
             timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            if not os.path.exists(self.filename):
+                with open(self.filename, "x") as f1:
+                    pass
             with open(self.filename,"a") as f1:
-                f1.write(f"[{timestamp}]\n{entry}\n")
+                f1.write(f"[{timestamp}]\n{entry}\n\n")
             print("\nEntry added successfully!\n")
         except PermissionError:
             print("\nError: Permission denied to write to the file.\n")
@@ -37,7 +40,7 @@ class JournalManager:
             with open(self.filename, "r") as f3:
                 data = f3.read()
 
-            entries = data.strip().split("\n")  
+            entries = data.strip().split("\n\n")  
             found = False
 
             for line in entries:
