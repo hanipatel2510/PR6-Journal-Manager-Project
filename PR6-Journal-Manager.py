@@ -65,7 +65,7 @@ class JournalManager:
             return
 
         user4 = input("\nAre you sure you want to delete all entries? (yes/no): ")
-        if user4.lower() == "yes":
+        if user4.strip().lower() == "yes":
             try:
                 os.remove(self.filename)
                 print("\nAll journal entries have been deleted.\n")
@@ -85,7 +85,7 @@ while True:
     print("4. Delete All Entries")
     print("5. Exit")
     
-    choice1 = input("User Input:\n")
+    choice1 = input("User Input:\n").strip()
     
     match choice1:
         case "1":
