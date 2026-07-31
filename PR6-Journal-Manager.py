@@ -84,17 +84,19 @@ while True:
     print("3. Search for an Entry")
     print("4. Delete All Entries")
     print("5. Exit")
-    
-    choice1 = input("User Input:\n").strip()
-    
+    try:
+        choice1 = int(input("User Input:\n"))
+    except ValueError:
+        print("\nInvalid input! Please enter only a number.\n")
+        continue
     match choice1:
-        case "1":
+        case 1:
             journal.add_entry()
-        case "2":
+        case 2:
             journal.view_entries()
-        case "3":
+        case 3:
             journal.search_entry()
-        case "4":
+        case 4:
             journal.delete_entry()
         case "5":
             print("\nThank you for using Personal Journal Manager. Goodbye!")
