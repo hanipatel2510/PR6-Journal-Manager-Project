@@ -98,7 +98,7 @@ while True:
             journal.search_entry()
         case 4:
             journal.delete_entry()
-        case "5":
+        case 5:
             print("\nThank you for using Personal Journal Manager. Goodbye!")
             break
         case _:
